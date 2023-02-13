@@ -21,9 +21,12 @@ const images = [
 TODO:
 Додай мінімальне оформлення галереї флексбоксами або грідами
 через CSS класи. */
+const galleryEl = document.querySelector(".gallery");
+
 const markup = images.map(({ alt, url }) =>
     `<li class="gallery-item">
     <img src="${url}" alt="${alt}" class="gallery-img">
     </li>`);
-document.querySelector(".gallery")
-    .insertAdjacentHTML("beforeend", markup);
+
+
+galleryEl.insertAdjacentHTML("beforeend", markup);

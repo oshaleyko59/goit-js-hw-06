@@ -11,11 +11,11 @@ const btnDown = document.querySelector('button[data-action="decrement"]');
 
 let counterValue = 0;
 function onDownClick() {
-    counterValue--;
+    counterValue -= 1;
     value.innerText = counterValue;
 }
 function onUpClick() {
-    counterValue++;
+    counterValue += 1;
     value.innerText = counterValue;
 }
 btnDown.addEventListener("click", onDownClick);

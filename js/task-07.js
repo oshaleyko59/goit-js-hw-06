@@ -8,9 +8,10 @@ type="range" min="16" max="96" />
 <br />
 <span id="text">Abracadabra!</span> */
 
-const span = document.getElementById('text');
+const spanEl = document.getElementById('text');
 const handleChange = event => {
-    span.style.fontSize = `${event.currentTarget.value}px`;
+    spanEl.style.fontSize = `${event.currentTarget.value}px`;
 }
-document.getElementById("font-size-control")
-    .addEventListener("change", handleChange);
+document
+  .getElementById("font-size-control")
+  .addEventListener("input", handleChange);

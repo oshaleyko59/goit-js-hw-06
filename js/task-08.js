@@ -17,7 +17,7 @@ const onLoginFormSubmit = event => {
     event.preventDefault();
     const { email, password } = event.currentTarget.elements;
     if (email.value === "" || password.value === "") {
-        return console.log("Please fill in all the fields!");
+        return alert("Please fill in all the fields!");
     }
 
     console.log({ email: email.value, password: password.value });

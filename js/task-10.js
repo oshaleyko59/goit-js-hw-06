@@ -16,6 +16,7 @@ function getRandomHexColor() {
 Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб
 видаляючи всі створені елементи. */
 
+const number = document.querySelector("#controls > input");
 const boxesEl = document.getElementById('boxes');
 
 function createBox(ind) {
@@ -34,10 +35,9 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
+    number.value = '';
     boxesEl.innerHTML ='';
 }
-
-const number = document.querySelector('#controls > input');
 
 document.querySelector('button[data-create]')
     .addEventListener('click', event => {
